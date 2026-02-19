@@ -1,0 +1,55 @@
+{
+  "world": {
+    "rows": 200,
+    "cols": 400,
+    "tile": { "w": 3800, "h": 3438 }
+  },
+
+  "maps": [
+    {
+      "id": "c1",
+      "label": "Continent 1 & 2",
+      "offset": { "row": 1, "col": 1 },
+      "grid": { "rows": 10, "cols": 18 },
+      "z": 20,
+
+      "tile": { "w": 3800, "h": 3438 },
+      "include": "auto",
+      "excludes": {
+        "I13": true,
+        "I14": true,
+        "J11": true,
+        "J12": true,
+        "J13": true,
+        "J14": true,
+        "J15": true
+      },
+
+      "overrides": {}
+    },
+    {
+      "id": "c2",
+      "label": "Solia",
+      "offset": { "row": 9, "col": 2 },
+      "grid": { "rows": 10, "cols": 18 },
+      "z": 10,
+
+      "tile": { "w": 3800, "h": 3438 },
+      "include": "auto",
+      "excludes": {},
+      "overrides": {}
+    },
+    {
+      "id": "c3",
+      "label": "ile nul",
+      "offset": { "row": 1, "col": 9 },
+      "grid": { "rows": 2, "cols": 2 },
+      "z": 50,
+
+      "tile": { "w": 2000, "h": 2000 },
+      "include": "auto",
+      "excludes": {},
+      "overrides": {}
+    }
+  ]
+}

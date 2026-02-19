@@ -1,0 +1,16 @@
+services:
+  tilegrid:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      # Mets ici le max que tu veux afficher (même si toutes les images n'existent pas)
+      - GRID_ROWS=10      # A..Z
+      - GRID_COLS=18      # 1..26
+      # Optionnel: si tu connais la taille d'une tuile (sinon auto-détection sur la 1ère tuile chargée)
+      - TILE_W=0
+      - TILE_H=0
+      # Sécurité / perf cache HTTP
+      - CACHE_MAX_AGE_SECONDS=31536000
+    volumes:
+      - ./tiles:/app/tiles:ro

@@ -1,0 +1,65 @@
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background: #0b0c10; color: #e8e8e8; }
+
+.topbar {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 14px;
+  background: #12131a;
+  border-bottom: 1px solid #242535;
+}
+
+.title { font-weight: 700; letter-spacing: 0.4px; }
+
+.controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+button {
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid #2b2d3f;
+  background: #1a1c28;
+  color: #e8e8e8;
+  cursor: pointer;
+}
+button:hover { background: #202337; }
+
+.hint { opacity: 0.75; font-size: 12px; }
+
+.viewport {
+  position: relative;
+  height: calc(100% - 56px);
+  overflow: hidden;
+}
+
+#canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(circle at 10% 10%, rgba(255,255,255,0.06), transparent 40%),
+    radial-gradient(circle at 90% 20%, rgba(255,255,255,0.05), transparent 45%),
+    #0b0c10;
+  cursor: grab;
+}
+#canvas.dragging { cursor: grabbing; }
+
+.hud {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  padding: 10px 12px;
+  border: 1px solid #2b2d3f;
+  border-radius: 12px;
+  background: rgba(18,19,26,0.75);
+  backdrop-filter: blur(6px);
+  font-size: 12px;
+  line-height: 1.4;
+  white-space: pre;
+  pointer-events: none;
+}

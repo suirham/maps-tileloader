@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TileGrid</title>
+  <link rel="stylesheet" href="style.css?v=20260219" />
+
+</head>
+<body>
+  <header class="topbar">
+    <div class="title">TileGrid</div>
+    <div class="controls">
+      <button id="forceLoadBtn" title="Tente de charger toutes les tuiles">Force load</button>
+      <button id="resetBtn" title="Recentrer">Reset</button>
+      <label class="hint">
+        Pan: clic-glissé • Zoom: molette/trackpad • Double-clic: zoom
+      </label>
+    </div>
+  </header>
+
+  <main class="viewport">
+    <canvas id="canvas"></canvas>
+    <div id="hud" class="hud"></div>
+  </main>
+
+  <script src="app.js?v=20260219"></script>
+
+</body>
+</html>
