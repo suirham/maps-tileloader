@@ -38,18 +38,6 @@
       "include": "auto",
       "excludes": {},
       "overrides": {}
-    },
-    {
-      "id": "c3",
-      "label": "ile nul",
-      "offset": { "row": 1, "col": 9 },
-      "grid": { "rows": 2, "cols": 2 },
-      "z": 50,
-
-      "tile": { "w": 2000, "h": 2000 },
-      "include": "auto",
-      "excludes": {},
-      "overrides": {}
     }
   ]
 }
